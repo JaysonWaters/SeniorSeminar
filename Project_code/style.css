@@ -1,0 +1,185 @@
+/*Jayson Waters, Frank Muhanyi, Erik Howard csc/mis 4990 3/31/2019*/
+
+*{/*sets the margin of the page*/
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{/*sets the font for the body*/
+    font-family: 'Poppins', sans-serif;
+}
+button{/*sets font for the buttons*/
+    font-family: 'Poppins', sans-serif;
+}
+
+header{/*sets constraints for the header*/
+    display: flex;
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+
+.logo-container,.nav-links,.cart{/*sets constraints for the containers at the top of the page*/
+    display: flex;
+}
+
+.logo-container{/*sets constraints for the logo-container class*/
+   
+    flex: 1;
+}
+
+.logo{/*logo container constraints*/
+    font-weight: 400;
+    margin: 5px;
+}
+
+
+nav{/*nav class constraints*/
+    
+    flex: 2;
+}
+
+.nav-links{ /*nav-link class style*/
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-link{/* style for the nav-link class*/
+    color: #5f5f79;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.cart{/*cart class constraints*/
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.presentation{/*presentation class constraints*/
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+.introduction{/*introduction class constraints*/
+    flex: 1;
+}
+.intro-text h1{/*constraints and style for the header1 in the intro-text class*/
+    font-size: 44px;
+    font-weight: 500;
+    background: linear-gradient(to right,#494964,#6f6f89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.intro-text p{/*constraints and style for the paragraph in the intro-text class*/
+    margin-top: 5px;
+    font-size: 22px;
+    color: #585772;
+}
+.cta{/* contstraints for the call-to-action container*/
+    padding: 50px 0px 0px 0px;
+}
+.cta-info{/* style and constraints for the info button in cta container*/
+    background: #585772;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    color:white;
+}
+.cta-find{/*style and constraints for the info button in cta container*/
+    background: #585772;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    color:white;
+    margin: 30px 0px 0px 30px;
+}
+
+.cover{/*constraints for the cover class container*/
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+}
+.cover img{/* style and constraints for the image of the mask*/
+    height: 100%;
+    filter: drop-shadow(0px 15px 10px black);
+    animation: drop 1.5s ease;
+}
+.big-circle{/*background image constraints*/
+    position:absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    opacity: 0.5;
+    height: 80%;
+    
+}
+.mid-circle{/*background image constraints*/
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    z-index: -1;
+    opacity: 0.5;
+    height: 75%;
+   
+}
+.small-circle{/*background image constraints*/
+    position: absolute;
+    bottom: 0%;
+    left: 10%;
+    z-index: -1;
+    
+}
+@keyframes drop{/*animation fuction*/
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 1024px){/* new contraint for the class when the website reaches below 1024px*/
+    .presentation{
+        flex-direction: column;
+    }
+    .introduction{
+        margin-top: 5vh;
+        text-align: center;
+    }
+    .intro-text h1{
+        font-size: 30px;
+    }
+    .intro-text p{
+        font-size: 18px;
+    }
+    .cta{
+        padding: 10px 0px 0px 0px;
+    }
+    .cover img{
+        height: 80%;
+    }
+    .nav-link{
+        font-size: 14px;
+    }
+    .logo-container{
+        flex-direction: column;
+    }
+    .logo-pic{
+        height: 3vh;   
+        align-items: center;
+     }
+    .logo{
+       text-align: center;
+    }
+}

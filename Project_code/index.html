@@ -1,0 +1,61 @@
+<!--Jayson Waters, Frank Muhanyi, Erik Howard csc/mis 4990 3/31/2021-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, inital-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <! -- This is the font style-->
+        <link 
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" 
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./style.css"/><! --alllows us to reference the css style page  -->
+        <title>Landing Page</title>
+
+    </head>
+    <body>
+        <header>
+            <div class="logo-container"><! -- our logo at the top of the page-->
+                <img class="logo-pic" src="./img/logo.svg" alt="logo"/><! -- gets logo from the img file-->
+                <h4 class="logo">N-95 Mask Finders</h4><! -- our website name-->
+            </div>
+            <nav>
+                <ul class="nav-links"><! --navigation links but they dont't have a function -->
+                    <li ><a class="nav-link" href="#">Desciption</a></li>
+                    <li ><a class="nav-link" href="#">Products</a></li>
+                    <li ><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart"><! -- our cart image -->
+                <img src="./img/cart.svg" alt="cart">
+            </div>
+        </header>
+
+        <main>
+            <section class="presentation"> <! -- main page containter-->
+                <div class="introduction"> <! -- introduction container-->
+                    <div class="intro-text"><! -- text container-->
+                        <h1>The N-95</h1>
+                        <p>
+                            The mask that saves lives
+                        </p>
+                    </div>
+                    <div class="cta"> <! -- call-to-action button container with links -->
+                        <button onclick="location.href='https://www.fda.gov/medical-devices/personal-protective-equipment-infection-control/n95-respirators-surgical-masks-and-face-masks'" class="cta-info">Info</button>
+                        <button onclick="location.href='https://www.amazon.com/n95-mask/s?k=n95+mask'" class="cta-find">Place to buy</button>
+                    </div>
+                </div>
+                <div class="cover"><! -- image of the mask-->
+                    <img src="./img/N95mask.png" alt="N95mask">
+                </div>
+            </section>
+            <! -- background images-->
+            <img class="big-circle" src="./img/big-eclipse.svg" alt="">
+            <img class="mid-circle" src="./img/mid-eclipse.svg" alt="">
+            <img class="small-circle" src="./img/small-eclipse.svg" alt="">
+        </main>
+
+    </body>
+</html>
