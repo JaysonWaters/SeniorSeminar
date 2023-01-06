@@ -72,6 +72,7 @@ nav{/*nav class constraints*/
     font-weight: 500;
     background: linear-gradient(to right,#494964,#6f6f89);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .intro-text p{/*constraints and style for the paragraph in the intro-text class*/
@@ -167,7 +168,8 @@ nav{/*nav class constraints*/
         padding: 10px 0px 0px 0px;
     }
     .cover img{
-        height: 80%;
+        width: 80%;
+        height: auto;
     }
     .nav-link{
         font-size: 14px;
